@@ -6,7 +6,7 @@ import { HttpLink } from "apollo-link-http";
 import gql from 'graphql-tag';
 const cache = new InMemoryCache();
  const link = new HttpLink({
-     uri: "https://chuck-norris-jokes-api-heroku"
+     uri: "/graphql"
  });
 
 const client = new ApolloClient({
